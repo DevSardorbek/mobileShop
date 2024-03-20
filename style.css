@@ -1,0 +1,523 @@
+@font-face {
+  font-family: SF Pro Text;
+  src: url(./fonts/San\ Francisco\ Pro\ Text/SFProText-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1280px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+header .header_one {
+  background-color: #454f5b;
+}
+header .header_one p {
+  font-family: SF Pro Display;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0.12em;
+  text-align: left;
+  color: #fff;
+}
+header .header_one .header_top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 9px 0;
+}
+header .header_two {
+  border-bottom: 1px solid #c4cdd5;
+}
+header .header_two .header_bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+header .header_two .header_bottom .menu-btn {
+  display: none;
+  background: transparent;
+  border: none;
+}
+header .header_two .header_bottom .header_links {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  margin-right: 100px;
+}
+header .header_two .header_bottom .header_links a {
+  font-family: SF Pro Text;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #161c24;
+}
+header .header_two .header_bottom .contact_head {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+header .header_two .header_bottom .contact_head .contact {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.prodact_cards_title {
+  margin-top: 20px;
+}
+.prodact_cards_title .title_link {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 40px;
+}
+.prodact_cards_title .title_link a:nth-child(1) {
+  color: #141414;
+}
+.prodact_cards_title .title_link a:last-child {
+  color: #3c3a3a;
+}
+.prodact_cards_title .title_link p {
+  font-style: 32px;
+}
+.prodact_cards_title .title_name {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.prodact_cards_title .title_name h1 {
+  font-family: SF Pro Text;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 42px;
+  text-align: left;
+}
+.prodact_cards_title .title_name p {
+  margin-top: 5px;
+}
+
+.prodact_cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+}
+.prodact_cards .prodact_card {
+  border: 1px solid #f7f7f7;
+  margin-top: 50px;
+  background-color: #f7f7f7;
+}
+.prodact_cards .prodact_card .card_top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.prodact_cards .prodact_card .card_top .img {
+  width: 200px;
+  height: 220px;
+  margin-top: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.prodact_cards .prodact_card .card_top .sale {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 17px 12px;
+  width: 100%;
+}
+.prodact_cards .prodact_card .card_top .sale .btn1 {
+  border: none;
+  background-color: #fff;
+  padding: 8px 10px;
+}
+.prodact_cards .prodact_card .card_top .sale .sale1 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.prodact_cards .prodact_card .card_info {
+  padding: 12px;
+}
+.prodact_cards .prodact_card .card_info h1 {
+  padding: 12px 0;
+  font-family: SF Pro Text;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  text-align: left;
+  color: #161c24;
+}
+.prodact_cards .prodact_card .card_info .card_reyting {
+  display: flex;
+  gap: 10px;
+  padding: 10px 0;
+}
+.prodact_cards .prodact_card .card_info .card_reyting img {
+  width: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.prodact_cards .prodact_card .card_info .card_reyting p {
+  font-family: SF Pro Text;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+  color: #454f5b;
+}
+.prodact_cards .prodact_card .card_info h2 {
+  font-family: SF Pro Text;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+  color: #454f5b;
+  overflow: hidden;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.prodact_cards .prodact_card .card_info .card_price {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+.prodact_cards .prodact_card .card_info .card_price h2 {
+  font-family: SF Pro Text;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 23.87px;
+  text-align: left;
+  color: #161c24;
+}
+.prodact_cards .prodact_card .card_info .card_price h3 {
+  font-family: SF Pro Text;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 21.48px;
+  text-align: left;
+  color: #454f5b;
+  text-decoration: line-through;
+}
+
+.main_section {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-top: 70px;
+  margin-bottom: 82px;
+}
+.main_section h1 {
+  font-family: SF Pro Text;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 42px;
+  text-align: left;
+  margin-bottom: 24px;
+  color: #161c24;
+}
+.main_section p {
+  font-family: SF Pro Text;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+  color: #454f5b;
+}
+.main_section .select {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px 32px;
+  margin: 24px 0;
+}
+.main_section .select .select1 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.main_section .select .select1 h3 {
+  font-family: SF Pro Text;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #161c24;
+}
+
+.view_section {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 100px;
+}
+.view_section h1 {
+  font-family: SF Pro Text;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 42px;
+  text-align: left;
+  color: #161c24;
+  margin-bottom: 24px;
+}
+.view_section p {
+  font-family: SF Pro Text;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+  color: #454f5b;
+  margin-bottom: 16px;
+}
+
+.call {
+  background-color: #f2f8ff;
+  padding-bottom: 56px;
+}
+.call .call_title {
+  width: 518px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 64px;
+  margin-bottom: 24px;
+}
+.call .call_title h1 {
+  font-family: SF Pro Text;
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 62px;
+  color: #161c24;
+  margin-bottom: 24px;
+}
+.call .call_title p {
+  font-family: SF Pro Text;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+}
+.call form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.call form input {
+  padding: 12px 16px;
+  background-color: #e9eff6;
+  border: none;
+  font-family: SF Pro Text;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+  outline: none;
+}
+.call form .btn2 {
+  padding: 12px 70px;
+  background-color: #4295e4;
+  border: none;
+  font-family: SF Pro Display;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  text-align: left;
+  color: #fff;
+}
+
+footer {
+  background-color: #0d2436;
+  padding-top: 55px;
+}
+footer a {
+  font-family: SF Pro Text;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 26px;
+  text-align: left;
+  color: #fff;
+}
+footer h3 {
+  font-family: SF Pro Text;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  text-align: left;
+  color: #fff;
+}
+footer .footer_wrap {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+  gap: 97px;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 50px;
+}
+footer .footer_wrap .footer_logo {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  gap: 144px;
+}
+footer .footer_wrap .footer_navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+footer .footer_wrap .footer_contact {
+  display: flex;
+  flex-direction: column;
+}
+footer .footer_wrap .footer_contact span {
+  margin: 20px 0 16px 0;
+  font-family: SF Pro Text;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: left;
+  color: #fff;
+}
+footer .footer_wrap .footer_contact p {
+  padding: 5px;
+  font-family: SF Pro Text;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 26px;
+  text-align: left;
+  color: #fff;
+}
+footer .footer_wrap .footer_adress {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+footer .footer_wrap .footer_adress h3 {
+  margin-bottom: 18px;
+}
+footer .footer_wrap .footer_adress p {
+  font-family: SF Pro Text;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 26px;
+  text-align: left;
+  color: #fff;
+}
+footer .footer_wrap .footer_info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+footer .footer_wrap .footer_info h3 {
+  margin-bottom: 8px;
+}
+footer .footer_bottom {
+  text-align: center;
+  padding: 24px 0;
+  font-family: SF Pro Display;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.71px;
+  color: #fff;
+}
+
+@media (max-width: 1300px) {
+  .container {
+    width: 100%;
+  }
+}
+@media (max-width: 950px) {
+  .header_bottom .menu-btn {
+    display: block !important;
+    z-index: 100;
+  }
+  .header_bottom .header_links {
+    display: none !important;
+  }
+  .header_bottom .contact_head {
+    display: none !important;
+  }
+  .prodact_cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .main_section_info {
+    flex-basis: 50%;
+  }
+  .main_section_img img {
+    width: 100%;
+  }
+  .view_section_info {
+    flex-basis: 50%;
+  }
+  .view_section_img img {
+    width: 100%;
+  }
+  footer .footer_wrap {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+  }
+}
+@media (max-width: 768px) {
+  .main_section .main_section_info {
+    width: 100%;
+    flex-basis: 100%;
+  }
+  .main_section .main_section_img img {
+    display: none;
+  }
+  .view_section_info {
+    flex-basis: 100%;
+  }
+  .view_section_img img {
+    display: none;
+  }
+  .prodact_cards {
+    grid-template-columns: 1fr 1fr;
+  }
+  form {
+    flex-wrap: wrap;
+  }
+  footer .footer_wrap {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 576px) {
+  .prodact_cards {
+    grid-template-columns: 1fr;
+  }
+}
+.btnOpened header {
+  position: relative;
+}
+.btnOpened header .header_two .header_bottom .header_links {
+  display: block !important;
+  position: absolute;
+  top: 130px;
+  background: #c4cdd5;
+  width: 100%;
+  left: 0;
+  text-align: center;
+  gap: 6px;
+}
+.btnOpened header .header_two .header_bottom .contact_head {
+  display: block !important;
+  position: absolute;
+  top: 202px;
+  background: #c4cdd5;
+  width: 100%;
+  left: 0;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */
